@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+    box-sizing: border-box;
+}
+
+
+ #formu .hola{
+    border-radius: 360%;
+    height: 150px;
+    width: 150px;
+    margin-top: -40px;
+    border: rgb(40, 33, 59) solid  6px;
+    padding: 6px;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+
+#formu{
+    background:#ff74da;
+  margin-top: 50px;
+    width: 90%;
+    max-width: 400px;
+   
+    padding: 4.6em 3em;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: 3px 5px 10px 5px rgb(1 1 1/50%);
+    text-align: center;
+   
+}
+h1{
+    position: absolute;
+   
+}
+#formu h2{
+    font-size: 2rem;
+    margin-bottom: .5em;
+   
+}
+#formu p{
+    font-weight: 300;
+}
+ a{
+    font-weight: 200;
+    text-decoration: none;
+    color: rgb(40, 33, 59) ;
+}
+.container{
+    margin-top:1em ;
+    display:grid ;
+gap: 1em;
+}
+.group{
+    position: relative;
+    --color:#5e58587e;
+}
+.input-text{
+    width: 100%;
+    background: none;
+    color: #5e58587e;
+    font-size: 1rem;
+     font-family: 'Roboto Condensed', sans-serif;
+    padding: .2em .1em;
+  border: none;
+    outline: none;
+    border-bottom: 0.2px solid var(--color) ;
+}
+
+.input-text:not(:placeholder-shown){
+    color: #5e58587e;
+}
+
+.input-text:focus + .label,
+.input-text:not(:placeholder-shown) + .label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left  top;
+    color: rgb(56, 30, 71) ;
+}
+
+ form .label{
+ cursor: pointer;
+    color: var(--color);
+    position: absolute;
+    top: 0;
+    left: 5px;
+    font-family: 50px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+#formu .submit{
+    background:rgb(40, 33, 59) ;
+    color: #fff;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 300;
+      font-size: 1rem;
+      padding: .3em 0;
+      border: none;
+      border-radius: .5em;
+}
+#formu .line{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 1px;
+background-color: #3855f2;
+transform: scale(0);
+transform: left bottom;
+transition: transform .4s;
+}
+.input-text:focus ~ .line,
+.input-text:not(:placeholder-shown) ~ .line{
+    transform: scale(1);
+}
+.boton{
+    color: #faf7f7;
+    position:absolute;
+    background-color: rgb(40, 33, 59);
+    margin-left: 60%;
+    margin-top: 10px;
+    display: flex;
+    padding: 5px;
+}

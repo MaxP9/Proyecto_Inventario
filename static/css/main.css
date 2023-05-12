@@ -1,0 +1,94 @@
+*{
+font-family: s;
+}
+header{
+    background: #8E2DE2;
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+}
+
+/*estilos para la tabla*/
+table th {
+    background-color: rgb(199, 199, 199)!important;
+    color: rgb(25, 11, 41);
+ 
+}
+table>tbody>tr>td {
+    vertical-align: middle !important;
+}
+
+/*para alinear los botones y cuadro de busqueda*/
+.btn-group, .btn-group-vertical {
+    position: absolute !important;
+}
+
+
+body{
+	background-color:white;
+}
+
+
+
+.navbar .logo img {
+	height:100px;
+	vertical-align: top;
+}
+
+.navbar .logo a {
+	color: rgb(25, 11, 41);
+	text-decoration: none;
+	line-height:40px;
+}
+
+.navbar{
+    background:blue;
+	width:100%;
+	padding:20px;
+height: 20%;
+	/* Flexbox */
+	display: flex;
+
+	align-items:center;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+
+.navbar ul a:hover {
+	background: #ff07be;
+}
+
+.navbar ul  a{
+    background: #ff07be;
+	color:darkslategray;
+	text-align: center;
+	text-decoration: none;
+
+
+	/* Flexbox */
+	flex-grow:1;
+}
+
+.container2{
+	background: rgb(46, 40, 68);
+
+   
+
+	
+}
+
+.container2 a{
+
+	text-align: center;
+	text-decoration: none;
+	
+}
+
+
+table {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+	
+}
